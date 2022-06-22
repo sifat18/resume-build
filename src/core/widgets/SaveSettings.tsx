@@ -1,5 +1,4 @@
-import React from 'react';
-import styled from 'styled-components';
+import axios from 'axios';
 import exportFromJSON from 'export-from-json';
 import {
   useActivities,
@@ -11,6 +10,7 @@ import {
   useWork,
 } from 'src/stores/data.store';
 import { getIcon } from 'src/styles/icons';
+import styled from 'styled-components';
 
 const IconWrapper = styled.div`
   outline-color: transparent;
@@ -42,9 +42,15 @@ export function SaveSettings() {
   const volunteer = useVolunteer((state: any) => state.volunteer);
   const awards = useAwards((state: any) => state.awards);
 
-  function save() {
+  async function save() {
     const fileName = basics.name + '_' + new Date().toLocaleString();
     const exportType = exportFromJSON.types.json;
+    let email: String = basics.email;
+    console.log(email);
+    let data: Object = { basics, skills, work, education, activities, volunteer, awards };
+    await axios
+      .put(`https://fierce-woodland-01411.herokuapp.com/resume/${email}`, data)
+      .then((res) => (res.data ? console.log(res.data) : console.log('cant')));
 
     exportFromJSON({
       data: { basics, skills, work, education, activities, volunteer, awards },
