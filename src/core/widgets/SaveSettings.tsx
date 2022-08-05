@@ -49,7 +49,7 @@ export function SaveSettings() {
     console.log(email);
     let data: Object = { basics, skills, work, education, activities, volunteer, awards };
     await axios
-      .put(`https://unive.site/api/resume/${email}`, data)
+      .put(`https://fierce-woodland-01411.herokuapp.com/api/resume/${email}`, data)
       .then((res) => (res.data ? console.log(res.data) : console.log('cant')));
 
     exportFromJSON({
