@@ -10,9 +10,9 @@ const labels = [
   'Certificates and Awards',
   'About me',
   'Career Objective',
-  'Technical Expertise',
-  'Skills / Exposure',
-  'Methodology / Approach',
+  'General Skills',
+  'Softwares',
+  'Technical Skills',
   'Tools',
   'Education',
   'Relevant Experience',
@@ -61,22 +61,16 @@ export const useIntro = create(
 export const useSkills = create(
   persist(
     (set) => ({
-      languages: userData.skills.languages,
-      frameworks: userData.skills.frameworks,
-      libraries: userData.skills.libraries,
-      databases: userData.skills.databases,
-      technologies: userData.skills.technologies,
-      practices: userData.skills.practices,
+      general_skills: userData.skills.general_skills,
+      softwares: userData.skills.softwares,
+      technical_skills: userData.skills.technical_skills,
       tools: userData.skills.tools,
 
       reset: (data = userData.skills) => {
         set({
-          languages: data.languages,
-          frameworks: data.frameworks,
-          libraries: data.libraries,
-          databases: data.databases,
-          technologies: data.technologies,
-          practices: data.practices,
+          general_skills: data.general_skills,
+          softwares: data.softwares,
+          technical_skills: data.technical_skills,
           tools: data.tools,
         });
       },

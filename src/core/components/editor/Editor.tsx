@@ -200,12 +200,12 @@ export const SkillEditor = ({ type, hasRating = false }: { type: string; hasRati
 
 export const SkillsEditor = () => (
   <>
-    <SkillEditor type="languages" hasRating />
-    <SkillEditor type="frameworks" hasRating />
-    <SkillEditor type="technologies" hasRating={false} />
-    <SkillEditor type="libraries" hasRating={false} />
-    <SkillEditor type="databases" hasRating={false} />
-    <SkillEditor type="practices" hasRating={false} />
+    <SkillEditor type="general_skills" hasRating />
+    {/* <SkillEditor type="frameworks" hasRating /> */}
+    <SkillEditor type="softwares" hasRating={false} />
+    {/* <SkillEditor type="libraries" hasRating={false} />
+    <SkillEditor type="databases" hasRating={false} /> */}
+    <SkillEditor type="technical_skills" hasRating={false} />
     <SkillEditor type="tools" hasRating={false} />
   </>
 );

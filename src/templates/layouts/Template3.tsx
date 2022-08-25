@@ -63,14 +63,11 @@ export default function Template3() {
     (state: any) => [state.involvements, state.achievements],
     shallow
   );
-  const [languages, frameworks, libraries, databases, technologies, practices, tools] = useSkills(
+  const [general_skills, softwares, technical_skills, tools] = useSkills(
     (state: any) => [
-      state.languages,
-      state.frameworks,
-      state.libraries,
-      state.databases,
-      state.technologies,
-      state.practices,
+      state.general_skills,
+      state.softwares,
+      state.technical_skills,
       state.tools,
     ],
     shallow
@@ -93,15 +90,15 @@ export default function Template3() {
           </Section>
 
           <Section icon="expert" title={labels[5]}>
-            <TechnicalExpertise data={[...languages, ...frameworks]} />
+            <TechnicalExpertise data={[...general_skills]} />
           </Section>
 
           <Section icon="skill" title={labels[6]}>
-            <UnratedCapsules data={[...technologies, ...libraries, ...databases]} />
+            <UnratedCapsules data={[...softwares]} />
           </Section>
 
           <Section icon="branch" title={labels[7]}>
-            <UnratedCapsules data={practices} />
+            <UnratedCapsules data={technical_skills} />
           </Section>
 
           <Section icon="tool" title={labels[8]}>

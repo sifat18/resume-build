@@ -60,14 +60,11 @@ export default function LegacyTemplate() {
     (state: any) => [state.involvements, state.achievements],
     shallow
   );
-  const [languages, frameworks, libraries, databases, technologies, practices, tools] = useSkills(
+  const [general_skills, softwares, technical_skills, tools] = useSkills(
     (state: any) => [
-      state.languages,
-      state.frameworks,
-      state.libraries,
-      state.databases,
-      state.technologies,
-      state.practices,
+      state.general_skills,
+      state.softwares,
+      state.technical_skills,
       state.tools,
     ],
     shallow
@@ -103,14 +100,14 @@ export default function LegacyTemplate() {
         <Description description={intro.objective} />
         <LineSeparator />
         <LegacyHeader Icon={getIcon('expert')} title={labels[5]} />
-        <RatedPill items={[...languages, ...frameworks]} />
+        <RatedPill items={[...general_skills]} />
         <LineSeparator />
         <LegacyHeader Icon={getIcon('skill')} title={labels[6]} />
-        <UnratedTabs items={[...technologies, ...libraries, ...databases]} />
+        <UnratedTabs items={[...softwares]} />
 
         <LineSeparator />
         <LegacyHeader Icon={getIcon('branch')} title={labels[7]} />
-        <UnratedTabs items={practices} />
+        <UnratedTabs items={technical_skills} />
         <LineSeparator />
         <LegacyHeader Icon={getIcon('tool')} title={labels[8]} />
         <UnratedTabs items={tools} />
