@@ -84,45 +84,45 @@
   },
   "work": [
     {
-      "name": "Company 1",
+      "name": "Grit Technologies Limited",
       "position": "Service Engineer",
       "url": "",
       "startDate": "April 2022",
       "endDate": "present",
       "years": "4 months",
       "highlights": [],
-      "summary": "* Providing Transformer Servicing\n* Solving Transformer Coiling Problems\n* Connecting Transformer to the Grid"
+      "summary": "* Providing Transformer Servicing\n* Solving Transformer Coiling Problems\n* Connecting Transformer to the Grid\n* Doing monthly maintenance work\n* Generator Servicing\n* Synchronizer servicing "
     },
     {
-      "name": "Company 2",
-      "position": "Service Engineer",
+      "name": "Unive",
+      "position": "Campus Ambassador",
       "url": "",
-      "startDate": "April 2022",
-      "endDate": "present",
+      "startDate": "January 2022",
+      "endDate": " April 2022",
       "years": "4 months",
       "highlights": [],
-      "summary": "* Providing Transformer Servicing\n* Solving Transformer Coiling Problems\n* Connecting Transformer to the Grid"
+      "summary": "* Arranging workshops and seminars\n* Collecting CVs from the institute\n* Assisting industry professionals in creating Unive courses"
     },
     {
-      "name": "Company 3",
-      "position": "Service Engineer",
+      "name": "Energy Club, Dhaka Polytechnic Institute",
+      "position": "Member",
       "url": "",
-      "startDate": "April 2022",
-      "endDate": "present",
-      "years": "4 months",
+      "startDate": "January 2021",
+      "endDate": "December 2021",
+      "years": "12 months",
       "highlights": [],
-      "summary": "* Providing Transformer Servicing\n* Solving Transformer Coiling Problems\n* Connecting Transformer to the Grid"
+      "summary": "* Raising awareness among the students about energy club\n* Participating in competitions\n* Registering new members\n* Conducting sessions with new members"
     }
   ],
   "education": [
     {
-      "institution": "MIT, University",
+      "institution": "Dhaka Polytechnic Institute",
       "url": "https://www.mit.edu/",
-      "studyType": "MS",
-      "area": "Cloud technology",
-      "startDate": "2014",
-      "endDate": "2016",
-      "score": "68%",
+      "studyType": "Diploma",
+      "area": "Electrical Engineering",
+      "startDate": "2017",
+      "endDate": "2021",
+      "score": "3.1/ 4.0",
       "courses": []
     },
     {
@@ -137,8 +137,8 @@
     }
   ],
   "activities": {
-    "involvements": "* Prevented millions of dollars in state sales tax undercharges by initiating tests that revealed a bug in a new release of shopping cart software.\n * Isolated previously undiscovered flaw in price checking tool resulting in more competitive pricing and a 20 percent increase in revenue.\n * Implemented automated testing tools spawning more diligent levels of regression testing, negative testing, error/bug retests and usability.\n * Prevented millions of dollars in state sales tax undercharges by initiating tests that revealed a bug in a new release of shopping cart software.",
-    "achievements": "* React and redux - A complete guide 2020 from Udemy'\n * Agile and Scrum Master Certificate from Udacity\n  * Best performer award for consistently exceeding the performance\n  * Certificate of exceptional bug finder by XYZ client\n  * Recognition zero defect delivery\n  * Best performer award for consistently exceeding the performance"
+    "involvements": "* Serviced more than 10 substations\n* Completed a professional substation servicing course\n* Completed a virtual course on generator synchronization in Unive\n* Assisted in hiring more than 20 candidates\n* Collected more than 1000 CVs for various job positions\n* Participated in energy quiz competition in engineering fair\n* Onboarded more than 100 energy club members",
+    "achievements": "* Generator Synchronization course by Unive\n* Substation Servicing Course by Institute of Diploma Engineers\n* Leadership Course by Linkedin\n* Participation certificate for Energy Quiz\n* Unive Campus Ambassador Award"
   },
   "volunteer": [],
   "awards": []
